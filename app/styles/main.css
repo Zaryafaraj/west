@@ -1,0 +1,30 @@
+#main-page-title {
+  text-align: center;
+}
+
+.city-block {
+  border: 10px solid transparent;
+  padding: 0;
+  height: 400px;
+}
+.image-holder {
+  width: 100%;
+  height: 100%;
+}
+.city-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  color: #ffffff;
+  text-align: center;
+  background-color: rgba(61, 56, 62, 0.25);
+  width: 100%;
+}
+.title-row {
+  margin-bottom: 50px;
+}
