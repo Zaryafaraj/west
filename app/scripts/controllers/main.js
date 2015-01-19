@@ -8,5 +8,5 @@
  * Controller of the westApp
  */
 angular.module('westApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('MainCtrl', function () {
   });
