@@ -1,2 +1,16 @@
-<h1>{{city}}</h1>
-<p>{{allApartments}}</p>
+<h1>Apartments in {{cityName}}</h1>
+
+<div ng-repeat="apartment in allApartments">
+  <h4>{{apartment.title}}</h4>
+
+  <p>{{apartment.street}}, {{apartment.city}}, {{apartment.region}}. {{apartment.zip}}</p>
+  <img ng-src="{{apartment.thumbnail}}"/>
+  <h5>{{apartment.floorplan}}</h5>
+  <h5>{{apartment.price}}</h5>
+  <h5>Contanct: {{apartment.contact}}</h5>
+
+  <hr>
+
+
+</div>
+<!--<p>{{allApartments}}</p>-->
