@@ -20,7 +20,8 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'wu.masonry'
+    'wu.masonry',
+    'ui.bootstrap'
   ])
   .config(function ($routeProvider) {
     $routeProvider

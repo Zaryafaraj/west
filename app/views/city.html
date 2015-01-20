@@ -1,6 +1,6 @@
 <div class="row">
   <div masonry preserve-order>
-    <div class="masonry-brick col-lg-4 col-md-4 col-sm-6 col-xs-9" ng-repeat="apartment in allApartments">
+    <div class="masonry-brick col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1" ng-repeat="apartment in allApartments">
       <img class="masonry-img" ng-src="{{apartment.thumbnail}}"/>
 
       <div class="image-overlay">
@@ -11,8 +11,7 @@
 
 
       <div class="apartment-short-desc">
-        <h4>{{apartment.title}}</h4>
-
+        <a><h4>{{apartment.title}}</h4></a>
         <p>{{apartment.street}}, {{apartment.city}}, {{apartment.region}}. {{apartment.zip}}</p>
       </div>
     </div>
