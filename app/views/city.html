@@ -1,13 +1,20 @@
 <div class="row">
   <div masonry preserve-order>
-    <div class="masonry-brick col-lg-4 col-md-4 col-sm-6 col-xs-9" style="border: solid" ng-repeat="apartment in allApartments">
-      <img ng-src="{{apartment.thumbnail}}"/>
-      <h4>{{apartment.title}}</h4>
+    <div class="masonry-brick col-lg-4 col-md-4 col-sm-6 col-xs-9" ng-repeat="apartment in allApartments">
+      <img class="masonry-img" ng-src="{{apartment.thumbnail}}"/>
 
-      <p>{{apartment.street}}, {{apartment.city}}, {{apartment.region}}. {{apartment.zip}}</p>
-      <h5>{{apartment.floorplan}}</h5>
-      <h5>{{apartment.price}}</h5>
-      <h5>Contanct: {{apartment.contact}}</h5>
+      <div class="image-overlay">
+        <h5>{{apartment.floorplan}}</h5>
+        <h5>{{apartment.price}}</h5>
+        <h5>Contanct: {{apartment.contact}}</h5>
+      </div>
+
+
+      <div class="apartment-short-desc">
+        <h4>{{apartment.title}}</h4>
+
+        <p>{{apartment.street}}, {{apartment.city}}, {{apartment.region}}. {{apartment.zip}}</p>
+      </div>
     </div>
   </div>
 </div>
