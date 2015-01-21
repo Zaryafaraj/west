@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row apartment-container">
   <div masonry preserve-order>
     <div class="masonry-brick col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1" ng-repeat="apartment in allApartments">
       <img class="masonry-img" ng-src="{{apartment.thumbnail}}"/>
@@ -8,10 +8,9 @@
         <h5>{{apartment.price}}</h5>
         <h5>Contanct: {{apartment.contact}}</h5>
       </div>
-
       <div class="apartment-short-desc">
-        <a><h4>{{apartment.title}}</h4></a>
-        <p>{{apartment.street}}, {{apartment.city}}, {{apartment.region}}. {{apartment.zip}}</p>
+        <h4 class="apartment-link"><a>{{apartment.title}}</a></h4>
+        <p class="apartment-address">{{apartment.street}}, {{apartment.city}}, {{apartment.region}}. {{apartment.zip}}</p>
       </div>
     </div>
   </div>
