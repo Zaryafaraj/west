@@ -1,8 +1,6 @@
 # Mayor West
 
-a simple apartment finder for angularjs (zyring.com project)
-
-For more info visit http://zyring.com
+a simple apartment finder for angularjs
 
 ![image](http://images2.fanpop.com/images/quiz/32764_1216059163521_350_278.jpg)
 
