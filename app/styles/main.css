@@ -7,15 +7,60 @@ body {
   background: linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* W3C */
 }
 
-#main-page-title {
+.container {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+.head-container {
+  background: -webkit-linear-gradient(90deg, #536273 10%, #717981 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #536273 10%, #717981 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #536273 10%, #717981 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #536273 10%, #717981 90%); /* Opera 11.10+ */
+  background:       linear-gradient(90deg, #536273 10%, #717981 90%);
+  background-size: cover;
+  height: 400px;
+  padding-top: 55px;
+  margin-bottom: 50px;
+}
+.city-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.city-container h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: rgb(107, 117, 126);
+}
+h3 {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+#main-page-subtitle {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
   text-align: center;
-  color: #f07057
+  color: rgba(255, 255, 255, 0.71);
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  margin-top: 0px;
+}
+#main-page-title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 50px;
 }
 
 .city-block {
-  border: 10px solid transparent;
+  border: 12px solid transparent;
   padding: 0;
-  height: 400px;
+  height: 300px;
 }
 
 .image-holder {
@@ -30,16 +75,22 @@ body {
 }
 
 .image-text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
   position: absolute;
-  top: 50%;
-  left: 25%;
-  border: 3px solid white;
+  top: 78%;
+  left: 0;
+  border: 2px solid transparent;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 20px;
   color: #ffffff;
-  text-align: center;
-  background-color: rgba(33, 29, 34, 0.63);
-  width: 50%;
+  width: 100%;
+  background-color: rgba(33, 29, 34, 0.64);
+}
+
+.image-holder:hover .city-image {
+  opacity: 0.9;
 }
 
 .image-overlay {
@@ -54,10 +105,49 @@ body {
   width: 75%;
 }
 
-.title-row {
-  margin-top: 100px;
-  margin-bottom: 50px;
+.head-container form {
+  width: 100%;
 }
+.combo-form {
+  max-width: 560px;
+  display: block;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.33);
+  padding: 20px;
+  position: relative;
+}
+.combo-form .search-bar {
+  height: 40px;
+  padding: 0 10px;
+  display: inline-block;
+  border: 1px solid #FFFFFF;
+  font-size: 14px;
+  border-radius: 4px 0 0 4px;
+  background: #FFFFFF;
+  max-width: 440px;
+  float: left;
+}
+
+.btn-search {
+  display: block;
+  margin: 0 auto;
+  background-color: #f0512e;
+  color: #FFFFFF;
+  border: 1px solid #f0512e;
+  width: 80px;
+  float: left;
+  border-radius: 0 4px 4px 0;
+  text-align: center;
+  font-size: 14px;
+  padding: 0 15px;
+  font-weight: 600;
+  height: 40px;
+}
+.search-logo {
+  width: 16px;
+  margin: 0 auto;
+}
+
 
 .apartment-container {
   margin-top: 100px;
@@ -79,4 +169,16 @@ body {
 }
 .apartment-address {
   padding-bottom: 20px;
+}
+
+@media (min-width: 769px ) {
+  .search-bar {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px ) {
+  .search-bar {
+    width: 70%;
+  }
 }
